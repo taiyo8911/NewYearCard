@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>年賀状｜20XX年</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- オリジナルCSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>年賀状｜20XX年</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- オリジナルCSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-<body>
-    <div class="container text-center">
-        <header>
-            <h2 id="happy-new-year" class="mt-4 mb-4">HAPPY NEW YEAR</h2>
-        </header>
+        <style>
+            body {
+                background-color: rgb(248, 237, 171);
+                color: #494646;
 
-        <main>
-            <h2 id="year-eto" class="mb-4">
-                <!-- 今年 -->
-                <span id="this-year" class=""></span>
+            }
 
-                <!-- 干支 -->
-                <span id="eto" class=""></span>年
+            .container {
+                max-width: 480px;
+                border: #D0D1D1 2px solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
 
-            </h2>
+    <body>
+        <div class="container text-center">
+            <div>
+                <h1 id="happy-new-year" class="mt-4 mb-4">HAPPY NEW YEAR</h1>
 
-            <div id="eto-image" class="mb-4"></div>
+                <h2 id="year-eto" class="mb-4">
+                    <!-- 今年 -->
+                    <span id="this-year" class=""></span>
+                    <!-- 干支 -->
+                    <span id="eto" class=""></span>年
+                </h2>
 
-            <div id="omikuji" class="mb-4">
-                <button type="button" class="btn btn-outline-danger"
-                    onclick="Omikuji(), this.disabled = true;">おみくじを引く</button>
+                <div id="eto-image" class="mb-4"></div>
+
+                <div id="omikuji" class="mb-4">
+                    <button type="button" class="btn btn-outline-danger" onclick="Omikuji(), this.disabled = true;">おみくじを引く</button>
+                </div>
+
+                <div id="omikuji-result" class="mb-4"></div>
+
+                <div id="link-group" class="">
+                    <a href="https://youtu.be/h86FeBU2w9Y" class="link-danger" target="_blank">おいしいお雑煮の作り方（動画）</a><br>
+                </div>
+
+                <p class="mt-4">&copy;Mac屋</p>
             </div>
+        </div>
 
-            <div id="omikuji-result" class="mb-4"></div>
+        <script src="js/jquery.arctext.js"></script>
+        <script src="js/arctext.js"></script>
+        <script src="js/year.js"></script>
+        <script src="js/image.js"></script>
+        <script src="js/omikuji.js"></script>
 
-            <div id="link-group" class="">
-                <a href="https://youtu.be/h86FeBU2w9Y" class="link-danger" target="_blank">おいしいお雑煮の作り方（動画）</a><br>
-            </div>
-        </main>
-
-        <footer class="mt-4">
-            <p>&copy;Taiyo</p>
-        </footer>
-
-    </div>
-
-    <script src="js/jquery.arctext.js"></script>
-    <script src="js/arctext.js"></script>
-    <script src="js/year.js"></script>
-    <script src="js/image.js"></script>
-    <script src="js/omikuji.js"></script>
-
-</body>
+    </body>
 
 </html>
