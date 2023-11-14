@@ -1,5 +1,7 @@
 # NewYearCard
-Web年賀状。年を自動で取得して、干支、画像を表示。おみくじ機能。お正月のリンク集。
+* 年を自動取得
+* APIで干支画像表示
+* おみくじ機能
 
 ## 参考サイト
 [文字を扇形にする](https://nyanblog2222.com/programming/javascript/1233/)
